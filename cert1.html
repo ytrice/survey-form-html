@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <h1 id="title">Survey form for the Kroger Company</h1>
+    <div id="kroger">
+        <img src="images/download.jpg">
+    </div>
+    <p id="description">Thank you for taking a few minutes to fill in this survey form.</p>
+    <br>
+
+    <p class="bigger">Please fill in the following information.</p>
+    <br>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input id="name" type="text" placeholder=" Please enter your name here:"
+                    required></label>
+            <label id="email-label">Email <input id="email" type="email" placeholder="Please enter your email here:"
+                    required></label>
+            <label id="number-label">Age <input id="number" type="number" required
+                    placeholder="Please enter your age here:" min="18" max="55">
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Which option best descibes your current role?</p>
+            <select id="dropdown">
+                <option>Select here</option>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Other</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Would you like to join the savings club?</p>
+            <label for="yes"><input id="yes" type="radio" value="yes" name="yes-no">Yes</label>
+            <label for="no"><input id="no" type="radio" value="no" name="yes-no">No</label>
+            <label for="notsure"><input id="notsure" type="radio" value="notsure" name="yes-no">Notsure</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>What would you like to see improved? (Check all that apply)</p>
+
+            <div id="products">
+                <ul>
+                    <li><label for=""><input id="" type="checkbox" value="improvements" name="improvements">Product
+                            Pricing</label></li>
+                    <li><label for=""><input id="" type="checkbox" value="improvements" name="improvements">Product
+                            Quality </label></li>
+                    <li><label for=""><input id="" type="checkbox" value="improvements" name="improvements">Product
+                            Availability </label></li>
+                </ul>
+            </div>
+            <div id="services">
+
+                <ul>
+                    <li>
+                        <label for="custmer"><input id="" type="checkbox" value="improvements"
+                                name="improvements">Customer Service </label>
+                    </li>
+                    <li><label for="operation"><input id="" type="checkbox" value="improvements"
+                                name="improvements">Hours of Operation </label></li>
+                    <li><label for="location"><input id="" type="checkbox" value="improvements"
+                                name="improvements">Location </label></li>
+                    <li> <label for="club"><input id="" type="checkbox" value="improvements" name="improvements">Savings
+                            club </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <br>
+        <div class="middle">
+            <textarea class="textarea">Additional comments</textarea>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
